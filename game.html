@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basketBall Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <div id="basketBallCourt">
+        <img src="./assets/ball.png" alt="basketBall" id="basketBall" usemap="#score1">
+        <map name="score1" id="score1">
+            <area shape="circle" coords="68,275,15" alt="hoop" id="hoop1" href="#">
+        </map>
+        <map name="score2" id="score2">
+            <area shape="circle" coords="68,275,15" alt="hoop" id="hoop2" href="#">
+        </map>
+    </div>
+    <div id="scoreContainer">
+        <p>Team A: <span id="scoresForTeamA">0</span></p>
+        <p>Team B: <span id="scoresForTeamB">0</span></p>
+    </div>
+    <div id="scoreAlert">
+        <p>Team <span id="teamName"></span> Score!</p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

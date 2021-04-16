@@ -1,0 +1,49 @@
+#basketBallCourt {
+    width: 600px;
+    height: 330px;
+    background-image: url(./assets/court.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#basketBall {
+    width: 40px;
+    height: 40px;
+    transform: translate3d(280px, 145px, 0);
+    transition: transform 0.2s ease-in;
+}
+
+#scoreContainer {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+area {
+    border-radius: 50%;
+    padding: 15px;
+    cursor: default;
+}
+
+#score1 {
+    position: absolute;
+    top: 156px;
+    left: 20px;
+    cursor: none;
+}
+
+#score2 {
+    position: absolute;
+    top: 156px;
+    right: 20px;
+    cursor: none;
+}
+
+#scoreAlert {
+    width: 600px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
